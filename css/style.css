@@ -1,0 +1,214 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(/Assets/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+#container{
+    width: 700px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/*------------------------- GRADIE -------------------------------*/
+.gradie{
+    background-color: #013243;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-image: url(/Assets/iPhone\ Mockup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+    
+
+
+    
+}
+.text{
+    margin-top: 10px;
+    color: #6f7b80;
+}
+.title{
+    margin-bottom: 0px ;
+    margin-top: 35px;
+    color: white;
+}
+
+
+/* ----------------------LOGIN---------------------------------------*/
+.create{
+    background-color: #ffffff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #bcbcbc;
+    padding: 0px 50px;
+    transition: .3s;
+}
+.login{
+    margin-top: 35px;
+}
+.emailpass input{
+    height: 45px;
+    width: 240px;
+ 
+}
+
+.emailpass p{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 13px;
+ 
+}
+.term{
+    display: flex;
+    margin-top: 20px;
+    
+}
+.term input{
+    margin: 2 0;
+}
+.term .text2{
+    margin: 0 5px;
+    line-height: 20px;
+    font-size: 15px;
+}
+.text2 a{
+    color:#013243;
+    font-weight: bold;
+}
+.button{
+    margin-top: 40px;
+}
+.button-text{
+    height: 50px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #013243;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+
+.button-text:hover{
+    background-color: white;
+    color: #013243;
+    border: 1px solid #013243;
+}
+
+
+@media screen and (max-width: 770px) {
+    body{
+        height: 1500px;
+    }
+    #container{
+        width: 500px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .gradie, .create {
+        border-radius: 0;
+    }
+    .title{
+        font-size: 45px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .gradie{
+        height: 623px;
+        
+    
+    }
+    .create{
+        height: 623px;
+
+        
+    }
+    .login{
+        margin-left: 25px;
+        font-size: 45px;
+    }
+    .create-log{
+        margin-left: 25px;
+    }
+    .emailpass p{
+        font-size: 20px;
+     
+    }
+    .emailpass input{
+        height: 60px;
+        width: 350px;
+     
+    }
+    .term .text2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .term input{
+        margin: 5 0;
+    }
+    .button-text{
+        height: 60px;
+        width: 350px;
+        font-size: 18px;
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        height: 100vh;
+    }
+    .title{
+        margin-top: 70px;
+        font-size: 30px;
+    }
+    
+    .gradie{
+        margin-top: 435px;
+    }
+    .emailpass input, .button-text{
+        width: 290px;
+     
+    }
+    .login, .create-log{
+        margin-left: 10px;
+
+    }
+    .text{
+        font-size: 15px;
+    }
+
+}
+@media screen and (max-width: 376px) {
+    .gradie{
+        margin-top: 315px;
+   
+    }
+    .title{
+        margin-top: 95px;
+
+    }
+
+}
